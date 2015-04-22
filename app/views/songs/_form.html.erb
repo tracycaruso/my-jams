@@ -1,0 +1,5 @@
+<%= form_for(@song) do |f| %> <!-- <form class="" action="/songs" method="post"> -->
+  <%= f.text_field :title, value: "title" %> <!-- <input type="text" name="song[title]"> -->
+  <%= f.text_field :artist, placeholder: "artist" %> <!-- <input type="text" name="song[artist]"> -->
+  <%= f.submit %> <!-- <input type="submit" value="Create song"> -->
+<% end %> <!--</form>-->

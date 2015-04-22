@@ -1,0 +1,10 @@
+<h1>test song </h1>
+
+<%= @song.title %>
+
+<!-- check rake routes to see if id is needed -->
+<%= link_to "Edit", edit_song_path(@song) %>
+<%= link_to "Delete", song_path(@song), method: :delete %> <!--if a prefix is not listed the last one shown travels down hence song_path -->
+
+
+#if a prefix is not listed the last one shown travels down

@@ -1,0 +1,10 @@
+<% @songs.each do |song| %>
+  <h1><%= song.title %></h1>
+  <!--(song) is id  -->
+  <%= link_to song.title, song_path(song)%>
+  <p><%= song.artist %></p>
+<% end %>
+
+<p><%= @counter %></p>
+<!-- <a href="/songs/new">Create a new song!</a> -->
+<%= link_to "Create a new song!", new_song_path, class: 'link' %>
